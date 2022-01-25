@@ -1,5 +1,5 @@
 * {
-	/* Universal reset for margins and padding for all elements */
+	/* Universal Selector - clears margins and padding for all elements */
 	margin: 0px;
 	padding: 0px;
 }
@@ -33,7 +33,7 @@ body {
 	overflow: hidden;
 }
 #nav {
-	background-color: #000;
+	background-color: rgb(79, 0, 170);
 }
 #nav ul {
 	list-style-type: none;
@@ -54,7 +54,7 @@ body {
 	text-decoration: none;
 	border-bottom-width: 4px;
 	border-bottom-style: solid;
-	border-bottom-color: #000;
+	border-bottom-color: rgb(79,0,170);
 	color: #FFF;
 }
 #nav ul li a:hover {
@@ -75,6 +75,7 @@ a:hover {
 .alert {
 	background-color:red;
 	color:white;
+	clear:both;
 }
 h2 {
 	color:#FFFFFF;
@@ -84,6 +85,13 @@ h3 {
 }
 h4 {
 	color:#5E5E5E;
+}
+.img-right {
+	float:right;
+	border: 5px ridge #000;
+	padding: 5px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 }
 #footer {
 	background-color: #000;
