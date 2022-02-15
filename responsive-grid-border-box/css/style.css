@@ -84,6 +84,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
    .container {
     /*background-image:url("../img/grid.png");*/
     width:80vw; /*980px*/
@@ -93,33 +102,34 @@ textarea {
 
   header.primary {
     background: rgba(0,0,0,.4);
-    width: 91.8367%; /*920px*/
+    width: 95.918%; /*940px*/
     margin:2.0408%; /*20px*/
-    padding:2.2222%; /*20px - padding uses 20/900 - uses self element not parent element*/
+    padding:2.1277%; /*20px - padding uses 20/940 - uses self element not parent element*/
     float:left;
   }
 
   #content {
     background: rgba(0,0,0,.6);
     float:left;
-    width:61.2245%; /*600px*/
+    width:65.306%; /*640px*/
     margin-left:2.0408%; /*20px*/
-    padding:2.2222%; /*20px - used consistent padding throughout the document instead of calculating new padding*/
+    padding:2.1277%; /*20px - used consistent padding throughout the document instead of calculating new padding*/
   }
 
 aside {
     background: rgba(0,0,0,.3);
     width:28.5714%; /*280px*/
     margin-left:2.0408%; /*20px*/
+    padding:2.1277%; /*20px*/
     float:left;
   }
 
   footer.primary{
     background: rgba(0,0,0,.4);
-    width:91.8367%; /*900px*/
+    width:95.918%; /*940px*/
     margin:2.0408%; /*20px*/
     float:left;
-    padding:2.2222%; /*20px*/
+    padding:2.1277%; /*20px*/
   }
 
 /* ==========================================================================
