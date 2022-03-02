@@ -134,7 +134,47 @@ aside {
 
 /* ==========================================================================
    Helper classes
+
+    @media screen and (max-width:600px){
+  .col{
+    float:none;
+    width:100%;
+    margin: 20px auto;
+  }
+  
+  .col:nth-child(odd){
+    background:#8fb87f;
+  } 
+}
+
+/* Ranged Query 
+
+@media screen and (max-width:800px) and (min-width:601px) {
+  .col {
+   float:left;
+   width:46%;
+   margin:1%;
+   text-decoration:underline;
+ }
+ 
+ .col:nth-child(odd){
+   background:red;
+ }  
+ 
+}
+
+/* Min-width Query 
+
+@media screen and (min-width:1100px){
+ .col {
+   width:23%;
+   margin:1%;
+ }
+}
+
    ========================================================================== */
+
+
 
 /*
  * Hide visually and from screen readers
