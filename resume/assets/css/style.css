@@ -209,10 +209,37 @@ dd {
   transition: background-color 0.5s ease;
 }
 
+li {
+  list-style-type: none;
+}
+
 .checked {
   color: orange;
 }
-  
+/*  
+#skills {
+  display:grid;
+  grid-template: auto/ 1fr 4fr;
+}
+#skills p {
+  grid-column: 1;
+}
+#skills progress {
+  grid-column: 2;
+}
+*/
+
+.job, .certificate {
+  padding-bottom: 20px;
+}
+
+.job, .certificate:not(:last-child) {
+  border-bottom: 1px solid #999;
+}
+
+.job *[itemprop="jobTitle"], .job *[itemprop="name"], .job *[itemprop="url"], .job *[itemprop="addressLocality"], .certificate *[itemprop="name"] {
+  display: block;
+}
 
 
 
@@ -342,7 +369,8 @@ p[data-value]:after {
 
 
 .html5::-webkit-progress-value,
-.python::-webkit-progress-value  {
+.scss::-webkit-progress-value,
+.js::-webkit-progress-value  {
 	/* Gradient background with Stripes */
 	background-image:
 	-webkit-linear-gradient( 135deg,
@@ -357,8 +385,9 @@ p[data-value]:after {
      -webkit-linear-gradient( left, #09c, #f44);
 }
 
-.css3::-webkit-progress-value,
-.php::-webkit-progress-value 
+.python::-webkit-progress-value,
+.php::-webkit-progress-value,
+.java::-webkit-progress-value 
 {
 	/* Gradient background with Stripes */
 	background-image:
@@ -373,9 +402,12 @@ p[data-value]:after {
 														rgba(0,0,0,.2)),
      -webkit-linear-gradient( left, #09c, #ff0);
 }
-
+/*
 .jquery::-webkit-progress-value,
-.node-js::-webkit-progress-value 
+.node-js::-webkit-progress-value */
+.mso::-webkit-progress-value,
+.gs::-webkit-progress-value,
+.as::-webkit-progress-value 
 {
 	/* Gradient background with Stripes */
 	background-image:
@@ -394,7 +426,8 @@ p[data-value]:after {
 /* Similarly, for Mozillaa. Unfortunately combining the styles for different browsers will break every other browser. Hence, we need a separate block. */
 
 .html5::-moz-progress-bar,
-.php::-moz-progress-bar {
+.scss::-moz-progress-bar,
+.js::-moz-progress-bar {
 	/* Gradient background with Stripes */
 	background-image:
 	-moz-linear-gradient( 135deg,
@@ -409,8 +442,9 @@ p[data-value]:after {
      -moz-linear-gradient( left, #09c, #f44);
 }
 
-.css3::-moz-progress-bar,
-.php::-moz-progress-bar {
+.python::-moz-progress-bar,
+.php::-moz-progress-bar,
+.java::-moz-progress-bar {
 
 	/* Gradient background with Stripes */
 	background-image:
@@ -425,9 +459,13 @@ p[data-value]:after {
 														rgba(0,0,0,.2)),
      -moz-linear-gradient( left, #09c, #ff0);
 }
-
+/*
 .jquery::-moz-progress-bar,
-.node-js::-moz-progress-bar {
+.node-js::-moz-progress-bar */
+.mso::-moz-progress-bar,
+.gs::-moz-progress-bar,
+.as::-moz-progress-bar 
+{
 	/* Gradient background with Stripes */
 	background-image:
 	-moz-linear-gradient( 135deg,
