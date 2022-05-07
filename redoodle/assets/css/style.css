@@ -96,9 +96,33 @@ textarea {
   #container {
     width: 100%
   }
+  header nav img {
+    margin-right:10px;
+  }
 
-
-
+  .bottom-space {
+    margin-bottom: 25px;
+  }
+  .lineBreak {
+    width:35%;
+    margin:auto;
+  }
+  .bio {
+    margin-bottom:32px;
+  }
+  .imgLeft {
+    float:left;
+    margin-right:20px;
+    border:1px solid black;
+    padding:5px;
+  }
+  .imgRight {
+    float:right;
+    margin-left:20px;
+    border:1px solid black;
+    padding:5px;
+  }
+  
 
 /* ==========================================================================
    Helper classes
