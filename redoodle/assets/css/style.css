@@ -114,23 +114,30 @@ textarea {
   }
 
   #products {
-    margin:0 auto;
     display:grid;
-    
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    
-    grid-auto-rows:3em;
+    grid-template-columns: 1fr;
     gap: 2em;
   }
 
   #productHead {
-    grid-column: 1/ span 5;
-    margin:30px auto 0;
+    margin:30px auto;
   }
 
   .card {
     max-width:100%;
   }
+
+  #contactForm {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+  }
+  #contactForm label {
+
+  }
+
+
+
 
   .bottom-space {
     margin-bottom: 25px;
@@ -238,22 +245,33 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-/*
-@media screen and (max-width:576px){
-  #products{
-    grid-template-columns: 1fr;
-    row-gap: 25px;
+
+@media screen and (max-width:767px){
+  body {
+    background:red;
   }
 }
 @media screen and (max-width:991px) and (min-width:768px) {
   #products{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #contactForm {
+    grid-template-columns: 1fr 4fr;
+    grid-row-gap: 2em;
+  }
+  body {
+    background:pink;
   }
 }
 
 @media screen and (max-width:1199px) and (min-width:992px){
   #products{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+  #contactForm {
+    grid-template-columns: 1fr 5fr;
+    grid-row-gap: 2em;
   }
   body {
     background:lightblue;
@@ -262,10 +280,17 @@ textarea {
 
 @media screen and (min-width:1200px) {
   #products {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #contactForm {
+    grid-template-columns: 1fr 6fr;
+    grid-row-gap: 2em;
+  }
+  body {
+    background:green;
   }
 }
-*/
+
 
 
 

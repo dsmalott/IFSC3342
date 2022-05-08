@@ -70,7 +70,22 @@
     </nav>
   </header>
   <main>
-
+    <div class="container-sm">
+      <h1>Let us know if you want to inquire about any products or have any questions, concerns, or recommendations!</h1>
+      <form action="mailto:rakeweyr+redoodle@gmail.com" id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:<sup>*</sup></label>
+        <input type="text" id="email" name="email"required>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+        <label for="name">Message:<sup>*</sup></label>
+        <textarea id="message" name="message" required></textarea>
+        <span>* required field</span>
+        <input type="submit" onclick="alert('Thank you for your message!')">
+        
+      </form>
+    </div><!--#contactForm-->
   </main>
   <footer>
 
