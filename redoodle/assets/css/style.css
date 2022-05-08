@@ -93,11 +93,43 @@ textarea {
     box-sizing: inherit;
   }
 
+  body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  }
+
   #container {
     width: 100%
   }
+
   header nav img {
     margin-right:10px;
+  }
+
+  header nav a {
+    font-family: "Courgette", "Kalam", cursive;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "Handlee", fantasy;
+  }
+
+  #products {
+    margin:0 auto;
+    display:grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    
+    grid-auto-rows:3em;
+    gap: 2em;
+  }
+
+  #productHead {
+    grid-column: 1/ span 5;
+    margin:30px auto 0;
+  }
+
+  .card {
+    max-width:100%;
   }
 
   .bottom-space {
@@ -206,15 +238,34 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media screen and (min-width:768px){
-
+/*
+@media screen and (max-width:576px){
+  #products{
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+}
+@media screen and (max-width:991px) and (min-width:768px) {
+  #products{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-@media screen and (min-width:992px){
-
+@media screen and (max-width:1199px) and (min-width:992px){
+  #products{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body {
+    background:lightblue;
+  }
 }
 
+@media screen and (min-width:1200px) {
+  #products {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+*/
 
 
 
