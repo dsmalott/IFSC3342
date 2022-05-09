@@ -113,6 +113,38 @@ textarea {
     font-family: "Handlee", fantasy;
   }
 
+  #landingHeader {
+    margin-bottom: 30px;
+  }
+
+  #landDescription {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2em;
+    padding:0;
+    margin-bottom: 20px;
+  }
+  #landDescription,#landAbout li {
+    list-style-type: none;
+    justify-items: center;
+    align-items: center;
+  }
+  li img {
+    width:100px;
+  }
+  #landAbout {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2em;
+    margin-bottom: 20px;
+  }
+  #landAbout li a {
+    padding: 10px;
+    background:white;
+    text-decoration: none;
+  }
+
+
   #products {
     display:grid;
     grid-template-columns: 1fr;
@@ -132,12 +164,6 @@ textarea {
     grid-template-columns: 1fr;
     gap:10px;
   }
-  #contactForm label {
-
-  }
-
-
-
 
   .bottom-space {
     margin-bottom: 25px;
@@ -162,6 +188,22 @@ textarea {
     padding:5px;
   }
   
+  .landH1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .landH4 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #reviews {
+    background: yellow;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -250,9 +292,16 @@ textarea {
   body {
     background:red;
   }
+  .landH1 {
+    top:25%;
+  }
+  .landH4 {
+    top:30%;
+  }
 }
+
 @media screen and (max-width:991px) and (min-width:768px) {
-  #products{
+  #products,#landDescription{
     grid-template-columns: repeat(2,1fr);
   }
   #contactForm {
@@ -262,12 +311,21 @@ textarea {
   body {
     background:pink;
   }
+  .landH1 {
+    top:35%;
+  }
+  .landH4 {
+    top:40%;
+  }
 }
 
 @media screen and (max-width:1199px) and (min-width:992px){
   #products{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     
+  }
+  #landDescription {
+    grid-template-columns: repeat(6, 1fr);
   }
   #contactForm {
     grid-template-columns: 1fr 5fr;
@@ -281,6 +339,9 @@ textarea {
 @media screen and (min-width:1200px) {
   #products {
     grid-template-columns: repeat(4, 1fr);
+  }
+  #landDescription {
+    grid-template-columns: repeat(6, 1fr);
   }
   #contactForm {
     grid-template-columns: 1fr 6fr;
