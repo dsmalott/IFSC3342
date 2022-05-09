@@ -115,11 +115,12 @@ textarea {
 
   #landingHeader {
     margin-bottom: 30px;
+    background:white;
   }
 
   #landDescription {
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap:2em;
     padding:0;
     margin-bottom: 20px;
@@ -129,19 +130,22 @@ textarea {
     justify-items: center;
     align-items: center;
   }
+  #landDescription li:nth-child(even) {
+    grid-column: span 2;
+  }
   li img {
     width:100px;
+    justify-items: end;
   }
   #landAbout {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap:2em;
     margin-bottom: 20px;
+    padding:0;
   }
   #landAbout li a {
-    padding: 10px;
-    background:white;
-    text-decoration: none;
+    display:block;
   }
 
 
@@ -165,15 +169,20 @@ textarea {
     gap:10px;
   }
 
-  .bottom-space {
-    margin-bottom: 25px;
+  #artists,#makers {
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 3%;
+    row-gap: 35px;
   }
-  .lineBreak {
-    width:35%;
-    margin:auto;
-  }
+
   .bio {
-    margin-bottom:32px;
+    display:grid;
+    grid-template-rows:35px 1fr;
+    gap:15px;
+  }
+  .bioIMG {
+    width: 200px;
   }
   .imgLeft {
     float:left;
@@ -188,21 +197,15 @@ textarea {
     padding:5px;
   }
   
-  .landH1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .landH4 {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   #reviews {
     background: yellow;
+  }
+
+  footer {
+    background:gray;
+  }
+  footer li {
+    list-style-type:none;
   }
 
 /* ==========================================================================
@@ -292,17 +295,21 @@ textarea {
   body {
     background:red;
   }
-  .landH1 {
-    top:25%;
-  }
-  .landH4 {
-    top:30%;
-  }
 }
 
 @media screen and (max-width:991px) and (min-width:768px) {
-  #products,#landDescription{
-    grid-template-columns: repeat(2,1fr);
+  #products{
+    grid-template-columns: repeat(3,1fr);
+  }
+  #landDescription {
+    grid-template-columns: repeat(4,1fr);
+  }
+  #landDescription li:nth-child(odd) {
+    grid-column: span 2;
+  }
+  #landDescription li:nth-child(even) {
+    grid-column: span 2;
+    justify-items:start;
   }
   #contactForm {
     grid-template-columns: 1fr 4fr;
@@ -310,12 +317,6 @@ textarea {
   }
   body {
     background:pink;
-  }
-  .landH1 {
-    top:35%;
-  }
-  .landH4 {
-    top:40%;
   }
 }
 
@@ -325,7 +326,7 @@ textarea {
     
   }
   #landDescription {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(9, 1fr);
   }
   #contactForm {
     grid-template-columns: 1fr 5fr;
@@ -341,7 +342,8 @@ textarea {
     grid-template-columns: repeat(4, 1fr);
   }
   #landDescription {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    
   }
   #contactForm {
     grid-template-columns: 1fr 6fr;
