@@ -320,6 +320,7 @@ textarea {
   footer {
     margin-top:25px;
     display:grid;
+    
   }
   footer nav ul {
     display:grid;
@@ -328,6 +329,9 @@ textarea {
   }
   footer li {
     list-style-type:none;;
+  }
+  footer .nav-link {
+    color:rgba(255,255,255,.55);
   }
 
 /* ==========================================================================
@@ -436,7 +440,7 @@ textarea {
     grid-row-gap: 2em;
   }
   footer nav ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -453,7 +457,7 @@ textarea {
     grid-row-gap: 2em;
   }
   footer nav ul {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -470,7 +474,7 @@ textarea {
     grid-row-gap: 2em;
   }
   footer nav ul {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
