@@ -97,6 +97,122 @@ textarea {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   }
 
+  #landingPage {
+    background: #A0AECD;
+  }
+  #landingPage .dark {
+    background-color: #30343d; /* 70% dark*/
+  }
+  #landingPage .dark-btn {
+    color: #fff;
+    background-color: #30343d; /* 70% dark*/
+    border-color: #404652; /* 60% dark*/
+  }
+  #landingPage .alert-info {
+    background: #d0d7e6; /* 50% light*/
+    border-color: #c6cee1; /* 40% light*/
+  }
+  #landingPage footer {
+    background: #30343d; /* 70% dark*/
+  }
+
+  #artistsPage {
+    background: #B5CC8B;
+  }
+  #artistsPage .dark {
+    background-color: #363d2a; /* 70% dark*/
+  }
+  #artistsPage .dark-btn {
+    color: #fff;
+    background-color: #363d2a; /* 70% dark*/
+    border-color: #485238; /* 60% dark*/
+  }
+  #artistsPage .alert-info {
+    background: #dae6c5; /* 50% light*/
+    border-color: #d3e0b9; /* 40% light*/
+  }
+  #artistsPage footer {
+    background: #363d2a; /* 70% dark*/
+  }
+
+  #makersPage {
+    background: #95C3CC;
+  }
+  #makersPage .dark {
+    background-color: #2d3a3d; /* 70% dark*/
+  }
+  #makersPage .dark-btn {
+    color: #fff;
+    background-color: #2d3a3d; /* 70% dark*/
+    border-color: #3c4e52; /* 60% dark*/
+  }
+  #makersPage .alert-info {
+    background: #cae1e6; /* 50% light*/
+    border-color: #bfdbe0; /* 40% light*/
+  }
+  #makersPage footer {
+    background: #2d3a3d; /* 70% dark*/
+  }
+
+  #redoodlersPage {
+    background: #B1A9CC;
+  }
+  #redoodlersPage .dark {
+    background-color: #35333d; /* 70% dark*/
+  }
+  #redoodlersPage .dark-btn {
+    color: #fff;
+    background-color: #35333d; /* 70% dark*/
+    border-color: #474452; /* 60% dark*/
+  }
+  #redoodlersPage .alert-info {
+    background: #d8d4e6; /* 50% light*/
+    border-color: #d0cbe0; /* 40% light*/
+  }
+  #redoodlersPage footer {
+    background: #35333d; /* 70% dark*/
+  }
+
+  #productsPage {
+    background: #f6f7fa;
+  }
+  #productsPage .dark {
+    background-color: #35333d; /* 70% dark*/
+  }
+  #productsPage .dark-btn {
+    color: #fff;
+    background-color: #35333d; /* 70% dark*/
+    border-color: #474452; /* 60% dark*/
+  }
+  #productsPage .alert-info {
+    background: #d8d4e6; /* 50% light*/
+    border-color: #d0cbe0; /* 40% light*/
+  }
+  #productsPage footer {
+    background: #35333d; /* 70% dark*/
+  }
+
+  #contactPage {
+    background: #f6f7fa;
+  }
+  #contactPage .dark {
+    background-color: #35333d; /* 70% dark*/
+  }
+  #contactPage .dark-btn {
+    color: #fff;
+    background-color: #35333d; /* 70% dark*/
+    border-color: #474452; /* 60% dark*/
+  }
+  #contactPage .alert-info {
+    background: #d8d4e6; /* 50% light*/
+    border-color: #d0cbe0; /* 40% light*/
+  }
+  #contactPage footer {
+    background: #35333d; /* 70% dark*/
+  }
+
+
+
   #container {
     width: 100%
   }
@@ -115,7 +231,7 @@ textarea {
 
   #landingHeader {
     margin-bottom: 30px;
-    background:white;
+    
   }
 
   #landDescription {
@@ -202,10 +318,16 @@ textarea {
   }
 
   footer {
-    background:gray;
+    margin-top:25px;
+    display:grid;
+  }
+  footer nav ul {
+    display:grid;
+    grid-template-columns: 1fr;
+    padding:0;
   }
   footer li {
-    list-style-type:none;
+    list-style-type:none;;
   }
 
 /* ==========================================================================
@@ -292,9 +414,7 @@ textarea {
    ========================================================================== */
 
 @media screen and (max-width:767px){
-  body {
-    background:red;
-  }
+  
 }
 
 @media screen and (max-width:991px) and (min-width:768px) {
@@ -315,8 +435,8 @@ textarea {
     grid-template-columns: 1fr 4fr;
     grid-row-gap: 2em;
   }
-  body {
-    background:pink;
+  footer nav ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -332,8 +452,8 @@ textarea {
     grid-template-columns: 1fr 5fr;
     grid-row-gap: 2em;
   }
-  body {
-    background:lightblue;
+  footer nav ul {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -349,8 +469,8 @@ textarea {
     grid-template-columns: 1fr 6fr;
     grid-row-gap: 2em;
   }
-  body {
-    background:green;
+  footer nav ul {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
