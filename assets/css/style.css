@@ -106,7 +106,7 @@ body {
     max-width: 80vw;
     margin: 20px auto;
     text-align: left;
-    background-color: #FFF;
+    background-color: lavender;
     border: 1px solid #CCC;
 }
 
@@ -149,8 +149,18 @@ nav ul li a:hover {
 	border-bottom-color: #CCC;
 }
 
+#gallery {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:25px;
+  margin: 25px;
+}
+
+
 img{
   width:100%;
+  padding:2px;
+  border:1px solid #000
 }
 
 /* ==========================================================================
